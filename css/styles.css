@@ -233,3 +233,7 @@ section{padding:5.5rem 0}
 .roles-teaser p{flex:1 1 22rem;margin:0}
 .roles-teaser .icon{flex:0 0 auto;margin:0}
 .roles-actions{justify-content:center;margin-top:1.5rem}
+/* Home: agentic AI transformation band */
+.transform-band{background:linear-gradient(180deg,#f0fdfa 0%,#fff 100%);border-bottom:1px solid var(--line)}
+.transform-band .section-head h2{font-size:clamp(2rem,4vw,2.9rem)}
+.transform-actions{justify-content:center;margin-top:2.5rem}
