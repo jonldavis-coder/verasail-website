@@ -228,7 +228,8 @@ section{padding:5.5rem 0}
 .field input[aria-invalid="true"]:focus{box-shadow:0 0 0 4px rgba(220,38,38,.15)}
 /* Example AI agent roles */
 .card-more{border-style:dashed;border-color:rgba(20,184,166,.5);background:linear-gradient(135deg,rgba(45,212,191,.08),rgba(34,211,238,.04))}
-@media (min-width:981px){.roles-grid .card-more{grid-column:span 2}}
+@media (min-width:641px) and (max-width:980px){.roles-grid .card-more{grid-column:span 2}}
 .roles-teaser{display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap;margin-top:3rem;padding:1.5rem 1.75rem;border:1px solid var(--line);border-radius:var(--radius);background:#fff;box-shadow:0 1px 2px rgba(10,23,48,.04)}
 .roles-teaser p{flex:1 1 22rem;margin:0}
 .roles-teaser .icon{flex:0 0 auto;margin:0}
+.roles-actions{justify-content:center;margin-top:1.5rem}
