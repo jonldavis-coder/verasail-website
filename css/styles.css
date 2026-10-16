@@ -294,3 +294,5 @@ section{padding:5.5rem 0}
 .faq-list details[open] summary{margin-bottom:.5rem}
 .sitemap-list ul{columns:2;column-gap:2rem}
 @media (max-width:900px){.guide-layout{grid-template-columns:1fr}.guide-aside{position:static}.sitemap-list ul{columns:1}}
+.role-kind{color:#0b6b61}
+.section-head p a,.insights-strip p a,.prose p a{color:#0b6b61;text-decoration:underline;text-underline-offset:2px}
