@@ -1,0 +1,8 @@
+/* TEAM */
+Company: Verasail LLC
+Site: https://verasail.com/
+
+/* SITE */
+Last update: 2026/10/16
+Language: English
+Standards: HTML5, CSS3
