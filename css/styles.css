@@ -296,3 +296,7 @@ section{padding:5.5rem 0}
 @media (max-width:900px){.guide-layout{grid-template-columns:1fr}.guide-aside{position:static}.sitemap-list ul{columns:1}}
 .role-kind{color:#0b6b61}
 .section-head p a,.insights-strip p a,.prose p a{color:#0b6b61;text-decoration:underline;text-underline-offset:2px}
+
+/* Below-the-fold social image */
+.share-card{margin:0 auto 2.5rem;max-width:720px}
+.share-card img{width:100%;height:auto;border-radius:var(--radius);border:1px solid var(--line)}
