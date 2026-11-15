@@ -62,4 +62,26 @@
       if(status) status.textContent='Opening your email app\u2026 If nothing happens, email us directly at '+EMAIL+'.';
     });
   }
+  // GA4: record the pageview in dataLayer immediately, but download gtag.js
+  // only after the first interaction or a few seconds of idle time so the
+  // 179 KB script does not compete with rendering. gtag.js drains the queue
+  // when it loads, so the pageview is still sent.
+  var GA_ID='G-8Q9WBQF4G0';
+  window.dataLayer=window.dataLayer||[];
+  window.gtag=window.gtag||function(){window.dataLayer.push(arguments);};
+  window.gtag('js', new Date());
+  window.gtag('config', GA_ID);
+  var gaLoaded=false;
+  function loadGA(){
+    if(gaLoaded) return;
+    gaLoaded=true;
+    var s=document.createElement('script');
+    s.async=true;
+    s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;
+    document.head.appendChild(s);
+  }
+  ['pointerdown','keydown','scroll','touchstart'].forEach(function(ev){
+    window.addEventListener(ev, loadGA, {once:true, passive:true});
+  });
+  window.addEventListener('load', function(){ setTimeout(loadGA, 4000); });
 })();
